@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Personalfile" table="PERSONALFILE" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="filecoding">
+            <column name="FILECODING" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="deptid">
+            <column name="DEPTID" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="positionid">
+            <column name="POSITIONID" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="name">
+            <column name="NAME" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="email">
+            <column name="EMAIL" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="address">
+            <column name="ADDRESS" sql-type="varchar2(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idcard">
+            <column name="IDCARD" sql-type="varchar2(18)" length="18" not-null="true"/>
+        </property>
+        <property name="graduateschool">
+            <column name="GRADUATESCHOOL" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="salarystandard">
+            <column name="SALARYSTANDARD" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="sociasecurity">
+            <column name="SOCIASECURITY" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="filestatus">
+            <column name="FILESTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="jobcode">
+            <column name="JOBCODE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="SEX" sql-type="varchar2(5)" length="5" not-null="true"/>
+        </property>
+        <property name="phone">
+            <column name="PHONE" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="household">
+            <column name="HOUSEHOLD" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="politicsstatus">
+            <column name="POLITICSSTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="major">
+            <column name="MAJOR" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="education">
+            <column name="EDUCATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="openingbank">
+            <column name="OPENINGBANK" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="bankcard">
+            <column name="BANKCARD" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="registrar">
+            <column name="REGISTRAR" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="filingdate">
+            <column name="FILINGDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="resume">
+            <column name="RESUME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="familytiles">
+            <column name="FAMILYTILES" sql-type="varchar2(30)" length="30" not-null="true"/>
+        </property>
+        <property name="note">
+            <column name="NOTE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="resumes">
+            <column name="RESUMES" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="auditstatus">
+            <column name="AUDITSTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="isdelete">
+            <column name="ISDELETE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

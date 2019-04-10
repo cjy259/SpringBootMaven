@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Resulttable" table="RESULTTABLE" schema="SCOTT">
+        <id name="mid">
+            <column name="MID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="presumestatus">
+            <column name="PRESUMESTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="oneinterviewer">
+            <column name="ONEINTERVIEWER" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="onetime">
+            <column name="ONETIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="oneevaluation">
+            <column name="ONEEVALUATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="twointerviewer">
+            <column name="TWOINTERVIEWER" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="twotime">
+            <column name="TWOTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="twoevaluation">
+            <column name="TWOEVALUATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="threeinterviewer">
+            <column name="THREEINTERVIEWER" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="threetime">
+            <column name="THREETIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="threeevaluation">
+            <column name="THREEEVALUATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

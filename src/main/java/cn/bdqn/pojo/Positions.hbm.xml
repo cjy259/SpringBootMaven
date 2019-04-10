@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Positions" table="POSITIONS" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="jobcode">
+            <column name="JOBCODE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="position">
+            <column name="POSITION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="deptid">
+            <column name="DEPTID" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="jobtitle">
+            <column name="JOBTITLE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="jobdescription">
+            <column name="JOBDESCRIPTION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="note">
+            <column name="NOTE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="hiring">
+            <column name="HIRING" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="jobrequiement">
+            <column name="JOBREQUIEMENT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="recorddate">
+            <column name="RECORDDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="asofdate">
+            <column name="ASOFDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="disabled">
+            <column name="DISABLED" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

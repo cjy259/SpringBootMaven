@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Question" table="QUESTION" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="papertitle">
+            <column name="PAPERTITLE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="testingtypes">
+            <column name="TESTINGTYPES" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="deptid">
+            <column name="DEPTID" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="itemlevel">
+            <column name="ITEMLEVEL" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="peopledraw">
+            <column name="PEOPLEDRAW" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="drawdate">
+            <column name="DRAWDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="examcontent">
+            <column name="EXAMCONTENT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="note">
+            <column name="NOTE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="tryattachment">
+            <column name="TRYATTACHMENT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="disabeld">
+            <column name="DISABELD" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

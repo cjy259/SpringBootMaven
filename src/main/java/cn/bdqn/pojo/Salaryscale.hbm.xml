@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Salaryscale" table="SALARYSCALE" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="paynumber">
+            <column name="PAYNUMBER" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="auditstatus">
+            <column name="AUDITSTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="registrationtime">
+            <column name="REGISTRATIONTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="salaryname">
+            <column name="SALARYNAME" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="paytime">
+            <column name="PAYTIME" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="totalnumber">
+            <column name="TOTALNUMBER" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="totalbasic">
+            <column name="TOTALBASIC" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="actualamount">
+            <column name="ACTUALAMOUNT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="paymenttime">
+            <column name="PAYMENTTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="iinsttiutions">
+            <column name="IINSTTIUTIONS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="iiinstatitutions">
+            <column name="IIINSTATITUTIONS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="person">
+            <column name="PERSON" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

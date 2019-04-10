@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Tissue" table="TISSUE" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="tissueshort">
+            <column name="TISSUESHORT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="tissuename">
+            <column name="TISSUENAME" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="organisation">
+            <column name="ORGANISATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="address">
+            <column name="ADDRESS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="synopsis">
+            <column name="SYNOPSIS" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="note">
+            <column name="NOTE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="disabled">
+            <column name="DISABLED" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Employmentform" table="EMPLOYMENTFORM" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="name">
+            <column name="NAME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="position">
+            <column name="POSITION" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="handson">
+            <column name="HANDSON" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="resumestatus">
+            <column name="RESUMESTATUS" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="dateregistration">
+            <column name="DATEREGISTRATION" sql-type="date" not-null="true"/>
+        </property>
+        <property name="education">
+            <column name="EDUCATION" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="major">
+            <column name="MAJOR" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="jobapplication">
+            <column name="JOBAPPLICATION" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

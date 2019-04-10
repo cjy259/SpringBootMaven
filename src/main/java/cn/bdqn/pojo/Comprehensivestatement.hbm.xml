@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Comprehensivestatement" table="COMPREHENSIVESTATEMENT" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="year">
+            <column name="YEAR" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="totalnumber">
+            <column name="TOTALNUMBER" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="numberdoctorates">
+            <column name="NUMBERDOCTORATES" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="masterdegree">
+            <column name="MASTERDEGREE" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="undergraduatepopulation">
+            <column name="UNDERGRADUATEPOPULATION" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="numberspecialists">
+            <column name="NUMBERSPECIALISTS" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

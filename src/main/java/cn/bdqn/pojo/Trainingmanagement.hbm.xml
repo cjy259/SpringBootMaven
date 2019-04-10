@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Trainingmanagement" table="TRAININGMANAGEMENT" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="trainingname">
+            <column name="TRAININGNAME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="purpose">
+            <column name="PURPOSE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="trainees">
+            <column name="TRAINEES" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="brief">
+            <column name="BRIEF" sql-type="varchar2(255)" not-null="true"/>
+        </property>
+        <property name="materials">
+            <column name="MATERIALS" sql-type="varchar2(255)" not-null="true"/>
+        </property>
+        <property name="startingtime">
+            <column name="STARTINGTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="closetime">
+            <column name="CLOSETIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="feedback">
+            <column name="FEEDBACK" sql-type="varchar2(255)" not-null="true"/>
+        </property>
+        <property name="auditstatus">
+            <column name="AUDITSTATUS" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="uploadattachments">
+            <column name="UPLOADATTACHMENTS" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

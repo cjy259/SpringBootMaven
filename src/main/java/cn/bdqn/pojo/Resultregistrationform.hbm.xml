@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.bdqn.pojo.Resultregistrationform" table="RESULTREGISTRATIONFORM" schema="SCOTT">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="jobcode">
+            <column name="JOBCODE" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="jobtype">
+            <column name="JOBTYPE" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="jobname">
+            <column name="JOBNAME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="SEX" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="email">
+            <column name="EMAIL" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="adress">
+            <column name="ADRESS" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="recruitmenttype">
+            <column name="RECRUITMENTTYPE" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idcard">
+            <column name="IDCARD" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="schoolgraduation">
+            <column name="SCHOOLGRADUATION" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="salaryrequest">
+            <column name="SALARYREQUEST" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="telephone">
+            <column name="TELEPHONE" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="residence">
+            <column name="RESIDENCE" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="politicalstatus">
+            <column name="POLITICALSTATUS" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="major">
+            <column name="MAJOR" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="education">
+            <column name="EDUCATION" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="registrant">
+            <column name="REGISTRANT" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="filingtime">
+            <column name="FILINGTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="workexperience">
+            <column name="WORKEXPERIENCE" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+        <property name="incumbency">
+            <column name="INCUMBENCY" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="freshstudent">
+            <column name="FRESHSTUDENT" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="registrationtime">
+            <column name="REGISTRATIONTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="aresume">
+            <column name="ARESUME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="recommender">
+            <column name="RECOMMENDER" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="rectime">
+            <column name="RECTIME" sql-type="date" not-null="true"/>
+        </property>
+        <property name="recinterview">
+            <column name="RECINTERVIEW" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="attachedresume">
+            <column name="ATTACHEDRESUME" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

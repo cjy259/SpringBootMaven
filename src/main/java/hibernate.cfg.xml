@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:oracle:thin:@10.10.10.94:1521:orcl</property>
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <mapping class="cn.bdqn.pojo.Bonus"/>
+        <mapping resource="cn/bdqn/pojo/Bonus.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Comprehensivestatement"/>
+        <mapping resource="cn/bdqn/pojo/Comprehensivestatement.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Dept"/>
+        <mapping resource="cn/bdqn/pojo/Dept.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Depts"/>
+        <mapping resource="cn/bdqn/pojo/Depts.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Emp"/>
+        <mapping resource="cn/bdqn/pojo/Emp.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Employmentform"/>
+        <mapping resource="cn/bdqn/pojo/Employmentform.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Feedbackfrom"/>
+        <mapping resource="cn/bdqn/pojo/Feedbackfrom.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Personalfile"/>
+        <mapping resource="cn/bdqn/pojo/Personalfile.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Positions"/>
+        <mapping resource="cn/bdqn/pojo/Positions.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Publicattribute"/>
+        <mapping resource="cn/bdqn/pojo/Publicattribute.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Question"/>
+        <mapping resource="cn/bdqn/pojo/Question.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Resultregistrationform"/>
+        <mapping resource="cn/bdqn/pojo/Resultregistrationform.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Resulttable"/>
+        <mapping resource="cn/bdqn/pojo/Resulttable.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Role"/>
+        <mapping resource="cn/bdqn/pojo/Role.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Salary"/>
+        <mapping resource="cn/bdqn/pojo/Salary.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Salaryscale"/>
+        <mapping resource="cn/bdqn/pojo/Salaryscale.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Salgrade"/>
+        <mapping resource="cn/bdqn/pojo/Salgrade.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Tissue"/>
+        <mapping resource="cn/bdqn/pojo/Tissue.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Title"/>
+        <mapping resource="cn/bdqn/pojo/Title.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Trainingmanagement"/>
+        <mapping resource="cn/bdqn/pojo/Trainingmanagement.hbm.xml"/>
+        <mapping class="cn.bdqn.pojo.Users"/>
+        <mapping resource="cn/bdqn/pojo/Users.hbm.xml"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
